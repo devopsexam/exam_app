@@ -6,4 +6,11 @@ script:
 services:
   - docker
 
+deploy:
+  provider: script
+  skip_cleanup: true
+  script: bash docker_push.sh
 
+env:
+  global:
+    secure:
