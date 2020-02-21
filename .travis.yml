@@ -1,14 +1,12 @@
 language: java
 install: true
 script:
-  - mvn clean package
-
+- mvn clean package
 services:
-  - docker
-
+- docker
 deploy:
   provider: script
   skip_cleanup: true
   script: bash docker_push.sh
-
-
+env:
+  secure: TwJjhtP+648BidmOdB3e2H6gJWfx0/OA86V1bCVUPmnPjRPgreHMs0YKoObXxDZxJWecNzX7rXINSos4K8l8RGh2iZpxT21EUoWyHsInOTkHyx1CwKgA5D/5/MZSOL1KA/CoewBaKc1FCNaSeqB+Q87Prh+2gbDe1nswfMIQop4+eMUtN9zkmrC0aNvlwlCqrJXj+m9O1gd0eeHAqOlDN+5fc9oHQCXblYjVtjLWGo8kMkP/yXsaRZoQK+iPxEhjF/haV1dWWlFbexdbE6IzhsGZUrw4MIekjFLR+hAgJxA8rk8f4ow0lTAk783VsnZvxXqyAQy4WQqcpdHS9QqGUxgAMLVYuj+VJ0zxZtFqKJjV5Donmp56DPXp8ZEI9X+bTYoY0zE+QwGVBAYGRo2G9dFGJd42Jl30FK81PoTZqkVfR3568C3hr81tuTpNZVOI1GjzkSaixFPAb/znYYNspxMwelxTZsSyI9v7JbxTWcdy5XZm3OonKR4xwAfApiOBGmqZzHezZtoruYjlBhrbr8beRfz8veWXmDxoV/23fM9DPrGKru6mA2+2SC7AksKYCjgMa2PIu+1m92D8lFToSEW3dJjKgG/1cyvwBH3AIMOYa9zsCE12pisBnT4Pc6hniryi614kKdeHKZ69ZdrpaEcpZpipk8th+kZXWDoH2kw=
