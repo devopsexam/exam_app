@@ -1,4 +1,8 @@
 language: java
 install: true
-script: mvn install
-services: docker
+script:
+  - mvn clean package
+  - bash docker_push.sh
+services:
+  - docker
+
