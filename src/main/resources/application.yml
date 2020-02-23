@@ -10,3 +10,10 @@ spring:
     console:
       enabled: true
       path: /h2
+
+management:
+  metrics:
+    export:
+      influx:
+        uri: http://localhost:8086
+        enabled: true

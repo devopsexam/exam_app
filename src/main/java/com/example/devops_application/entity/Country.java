@@ -22,13 +22,30 @@ public class Country {
 
     public Integer getId() { return id; }
 
+    public void setId(Integer id) {
+        this.id = id;
+    }
 
     public String getCountryName() { return countryName; }
 
-
+    public void setCountryName(String countryName) {
+        this.countryName = countryName;
+    }
 
     public String getCountryCapital() {
         return countryCapital;
     }
 
+    public void setCountryCapital(String countryCapital) {
+        this.countryCapital = countryCapital;
+    }
+
+    @Override
+    public String toString() {
+        return "Country{" +
+                "id=" + id +
+                ", Country='" + countryName +
+                ", Capital='" + countryCapital +
+                '}';
+    }
 }
